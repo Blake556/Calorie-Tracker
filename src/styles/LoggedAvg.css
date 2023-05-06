@@ -1,4 +1,15 @@
 .Logged-Avg-container {
     border: 2px solid black;
-    height: 200px;
+    height: 325px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.average-title {
+    background-color: lightgreen;
+    color: ;
+}
+
+.cal-amount {
+    color: lightgreen;
 }

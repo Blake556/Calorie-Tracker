@@ -1,8 +1,24 @@
 .create-note-container {
     border: 2px solid black;
-    height: 200px;
+    height: 325px;
+    margin: 0 auto
 }
 
-.labels {
+label {
     width: 100px;
+    text-align: left;
+}
+
+.tracker-data {
+
+}
+
+.protien-input {
+    border-radius: 0;
+
+}
+
+input {
+    height: 150%;
+    font-size: 5.5rem;
 }

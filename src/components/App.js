@@ -10,7 +10,7 @@ import Footer from './Footer'
 function App() {
  
   return (
-    <div className="App">
+    <div className="App ">
 
       <Header />
 
@@ -28,7 +28,7 @@ function App() {
             <LoggedNotes />
         </div>
       </div>
-      
+
      <Footer />
 
     </div>
