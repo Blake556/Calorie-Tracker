@@ -1,7 +1,10 @@
 .Logged-Notes-container {
+   
     border: 2px solid black;
     margin-top: 20px;
     height: 300px;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 table {

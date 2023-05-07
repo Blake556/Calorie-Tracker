@@ -1,24 +1,36 @@
 .create-note-container {
+    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700441077.jpg");
+   
+   
     border: 2px solid black;
-    height: 325px;
+    height: 340px;
     margin: 0 auto
 }
 
 label {
-    width: 100px;
     text-align: left;
+  
 }
 
-.tracker-data {
-
-}
 
 .protien-input {
     border-radius: 0;
 
 }
 
-input {
-    height: 150%;
-    font-size: 5.5rem;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.name-of-input {
+    font-size: 1.4rem;
+    padding-left: 50px;
+}
+
+input.text-input {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    right: 30px;
 }

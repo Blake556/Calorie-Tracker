@@ -1,8 +1,9 @@
 .Logged-Avg-container {
     border: 2px solid black;
-    height: 325px;
+    height: 340px;
     text-align: center;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .average-title {

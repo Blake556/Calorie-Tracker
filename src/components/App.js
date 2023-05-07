@@ -14,7 +14,7 @@ function App() {
 
       <Header />
 
-      <div className="container">
+      <div className="container app-body">
         <div className="row">
           <div className="col col-8">
             <CreateNote />
@@ -25,7 +25,9 @@ function App() {
         </div>
 
         <div className="row">
+          <div className="col">
             <LoggedNotes />
+          </div>
         </div>
       </div>
 

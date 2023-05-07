@@ -7,7 +7,7 @@ function Footer() {
 
 
   return (
-    <div className="Footer">
+    <div className="Footer footer col d-flex">
         <h6>Copy Right @2023</h6>
     </div>
   );
