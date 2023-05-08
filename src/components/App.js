@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from "react";
 import '../styles/App.css';
 import Header from './Header'
 import CreateNote from './CreateNote'
@@ -8,7 +9,16 @@ import Footer from './Footer'
 
 
 function App() {
- 
+  // const [data, setData] = useState([])
+
+  // function handleData() {
+
+  // }
+
+  function addNote(note) {
+    console.log(note)
+  }
+
   return (
     <div className="App ">
 
@@ -17,7 +27,7 @@ function App() {
       <div className="container app-body">
         <div className="row">
           <div className="col col-8">
-            <CreateNote />
+            <CreateNote onAdd={addNote}/>
           </div>
           <div className="col col-4">
             <LoggedAvg />

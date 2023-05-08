@@ -5,7 +5,9 @@ function LoggedNotes() {
  
   return (
     <div className=" Logged-Notes-container">
+      
       <table className="">
+      <tbody>
         <tr>
           <th>Logged</th>
           <th>Calories</th>
@@ -14,11 +16,11 @@ function LoggedNotes() {
           <th>Date</th>
         </tr>
         <tr className="" style={ { backgroundColor: 'green' ? 'lightgreen' : 'green' }}>
-          <td>1</td>
-          <td>3,000</td>
-          <td>100</td>
-          <td>300</td>
-          <td>May 4, 2023</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
         <tr>
           <td>2</td>
@@ -27,7 +29,9 @@ function LoggedNotes() {
           <td>50</td>
           <td>May 5, 2023</td>
         </tr>
+        </tbody>
       </table>
+      
     </div>
   );
 }

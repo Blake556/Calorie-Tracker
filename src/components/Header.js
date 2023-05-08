@@ -14,7 +14,7 @@ function Header() {
 
   const date = getDate.toLocaleDateString('em-us', options)
 
-  console.log(date)
+  //console.log(date)
 
   return (
     <div className="container ">
