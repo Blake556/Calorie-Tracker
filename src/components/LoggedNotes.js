@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/LoggedNote.css";
+import Note from './Note'
 
 function LoggedNotes(props) {
 
@@ -18,25 +19,7 @@ const LogList = props.savedLog
           <th>Carbs</th>
           <th>Date</th>
         </tr>
-        {LogList.map((log, index) => {
-          return (
-            <tr className="" style={ { backgroundColor: 'green' ? 'lightgreen' : 'green' }}>
-             
-              <td>{log.length}</td>
-              <td>{log.calories}</td>
-              <td>{log.protien}</td>
-              <td>{log.carbs}</td>
-              <td>{}</td>
-            </tr>
-          )})
-        }
-        {/* <tr>
-          <td>2</td>
-          <td>9,000</td>
-          <td>200</td>
-          <td>50</td>
-          <td>May 5, 2023</td>
-        </tr> */}
+        <Note />
         </tbody>
       </table>
       

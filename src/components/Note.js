@@ -8,17 +8,14 @@ const LogList = props.savedLog
  
   return (
     <div>
-        {LogList.map((log, index) => {
-          return (
             <tr className="" style={ { backgroundColor: 'green' ? 'lightgreen' : 'green' }}>
-              <td>{log.length}</td>
-              <td>{log.calories}</td>
-              <td>{log.protien}</td>
-              <td>{log.carbs}</td>
-              <td>{}</td>
+              <td>{props.id}</td>
+              <td>{props.calories}</td>
+              <td>{props.protien}</td>
+              <td>{props.carbs}</td>
             </tr>
-          )})
-        }
+        
+      
     </div>
   );
 }

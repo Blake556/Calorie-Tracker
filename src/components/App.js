@@ -3,7 +3,7 @@ import { useState } from "react";
 import '../styles/App.css';
 import Header from './Header'
 import CreateNote from './CreateNote'
-import LoggedNotes from './LoggedNotes'
+import Note from './Note'
 import LoggedAvg from './LoggedAvg'
 import Footer from './Footer'
 
@@ -35,12 +35,9 @@ function App() {
 
         <div className="row">
           <div className="col">
-          <LoggedNotes 
-            savedLog={saveLog}
-          />
-              {/* { saveLog.map((newLog, index) => {
+              { saveLog.map((newLog, index) => {
                   return (
-                    <LoggedNotes
+                    <Note
                       key={index}
                       id={index}
                       calories={newLog.calories}
@@ -48,7 +45,7 @@ function App() {
                       carbs={newLog.carbs}
                     />
                   )})
-              }  */}
+              } 
           </div>
         </div>
       </div>
