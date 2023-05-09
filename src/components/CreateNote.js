@@ -3,17 +3,16 @@ import { useState } from "react";
 import "../styles/CreatNote.css";
 
 function CreatNote(props) {
+
   const [logNote, setLogNote] = useState({
+
     calories: '', 
     protien: '',
     carbs: ''
   })
 
-  //const [saveLog, setSaveLog] = useState([])
-
   function handleNewLog(event) {
     const {name, value} = event.target
-
 
     setLogNote(prevLog => {
       return {
@@ -21,26 +20,12 @@ function CreatNote(props) {
         [name]: value 
       }
     })
-    //console.log(log)
-    
-    
   }
 
   function submitNote(event) {
-    props.onAdd(logNote)
+    props.addLog(logNote)
     event.preventDefault();
   } 
-
-    // setDataRecieved({
-    //   calories: calValue, 
-    //   protien: protienValue,
-    //   carbs: carbValue
-
-    // })
-  
-
-
-
 
 
 

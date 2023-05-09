@@ -9,14 +9,13 @@ import Footer from './Footer'
 
 
 function App() {
-  // const [data, setData] = useState([])
+  const [saveLog, setSaveLog] = useState([])
 
-  // function handleData() {
-
-  // }
-
-  function addNote(note) {
-    console.log(note)
+  function addLog(log) {
+  
+    saveLog.push(log)
+    setSaveLog([...saveLog])
+    console.log(saveLog.length)
   }
 
   return (
@@ -27,7 +26,7 @@ function App() {
       <div className="container app-body">
         <div className="row">
           <div className="col col-8">
-            <CreateNote onAdd={addNote}/>
+            <CreateNote addLog={addLog}/>
           </div>
           <div className="col col-4">
             <LoggedAvg />
@@ -36,7 +35,20 @@ function App() {
 
         <div className="row">
           <div className="col">
-            <LoggedNotes />
+          <LoggedNotes 
+            savedLog={saveLog}
+          />
+              {/* { saveLog.map((newLog, index) => {
+                  return (
+                    <LoggedNotes
+                      key={index}
+                      id={index}
+                      calories={newLog.calories}
+                      protien={newLog.protien}
+                      carbs={newLog.carbs}
+                    />
+                  )})
+              }  */}
           </div>
         </div>
       </div>
