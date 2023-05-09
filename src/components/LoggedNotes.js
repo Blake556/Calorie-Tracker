@@ -6,6 +6,16 @@ function LoggedNotes(props) {
 
 const LogList = props.savedLog
  //console.log(LogList.index)
+
+ const getDate = new Date()
+
+ const options = {
+   month: 'long',
+   day: 'numeric'
+  //  year: 'numeric'
+ }
+
+ const date = getDate.toLocaleDateString('em-us', options)
  
   return (
     <div className=" Logged-Notes-container">
@@ -19,7 +29,18 @@ const LogList = props.savedLog
           <th>Carbs</th>
           <th>Date</th>
         </tr>
-        <Note />
+         { LogList.map((newLog, index) => {
+                  return (
+                    <Note
+                      key={index}
+                      id={index}
+                      calories={newLog.calories}
+                      protien={newLog.protien}
+                      carbs={newLog.carbs}
+                      day={date}
+                    />
+                  )})
+              } 
         </tbody>
       </table>
       

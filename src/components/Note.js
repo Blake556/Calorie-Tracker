@@ -1,22 +1,19 @@
 import React from "react";
 
-
 function Note(props) {
 
-const LogList = props.savedLog
- //console.log(LogList.index)
- 
+    let bgColor = "white"
   return (
-    <div>
-            <tr className="" style={ { backgroundColor: 'green' ? 'lightgreen' : 'green' }}>
-              <td>{props.id}</td>
-              <td>{props.calories}</td>
-              <td>{props.protien}</td>
-              <td>{props.carbs}</td>
-            </tr>
-        
-      
-    </div>
+    <tr
+      className=""
+      style={{ backgroundColor: bgColor ? "lightgreen" : "green" }}
+    >
+      <td>{props.id + 1}</td>
+      <td>{props.calories}</td>
+      <td>{props.protien}</td>
+      <td>{props.carbs}</td>
+      <td>{props.day}</td>
+    </tr>
   );
 }
 
