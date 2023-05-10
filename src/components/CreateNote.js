@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../styles/CreatNote.css";
+import AddIcon from '@mui/icons-material/Add';
 
 function CreatNote(props) {
 
@@ -46,6 +47,7 @@ function CreatNote(props) {
               className="form-control form-control-lg text-input"
               name="calories"
               value={logNote.calories}
+              required
             ></input>
           </div>
         </div>
@@ -63,6 +65,7 @@ function CreatNote(props) {
               className="form-control  form-control-lg text-input"
               name="protien"
               value={logNote.protien}
+              required
             ></input>
           </div>
         </div>
@@ -80,10 +83,13 @@ function CreatNote(props) {
               className="form-control form-control-lg text-input"
               name="carbs"
               value={logNote.carbs}
+              required
             ></input>
           </div>
         </div>
-        <button onClick={submitNote}>Add</button>
+        <div className='d-flex justify-content-end'>
+        <button className='btn btn-warning' onClick={submitNote}><AddIcon/></button>
+        </div>
       </form>
     </div>
   );

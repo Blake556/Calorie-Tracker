@@ -1,9 +1,9 @@
 .create-note-container {
-    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700441077.jpg");
+    /* background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700441077.jpg"); */
    
    
     border: 2px solid black;
-    height: 340px;
+    height: 375px;
     margin: 0 auto
 }
 
@@ -31,6 +31,12 @@ input::-webkit-inner-spin-button {
 input.text-input {
     text-align: center;
     font-size: 2rem;
+    position: relative;
+    right: 30px;
+}
+
+.btn {
+    border-radius: 50%;
     position: relative;
     right: 30px;
 }

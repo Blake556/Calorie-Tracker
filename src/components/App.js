@@ -15,7 +15,7 @@ function App() {
   
     saveLog.push(log)
     setSaveLog([...saveLog])
-    console.log(saveLog.length)
+    //console.log(saveLog.length)
   }
 
   return (
@@ -29,7 +29,7 @@ function App() {
             <CreateNote addLog={addLog}/>
           </div>
           <div className="col col-4">
-            <LoggedAvg />
+            <LoggedAvg savedLog={saveLog} />
           </div>
         </div>
 

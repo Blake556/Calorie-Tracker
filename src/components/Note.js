@@ -1,6 +1,15 @@
 import React from "react";
+import { useState } from "react";
 
 function Note(props) {
+
+    const [color, setColor] = useState(true)
+
+    function changeColor() {
+        
+    }
+    
+
 
     let bgColor = "white"
   return (
