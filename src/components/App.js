@@ -29,7 +29,7 @@ function App() {
             <CreateNote addLog={addLog}/>
           </div>
           <div className="col col-4">
-            <LoggedAvg savedLog={saveLog} />
+            <LoggedAvg savedLog={saveLog} addLog={addLog} />
           </div>
         </div>
 

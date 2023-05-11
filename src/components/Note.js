@@ -11,11 +11,11 @@ function Note(props) {
     
 
 
-    let bgColor = "white"
+    
   return (
     <tr
       className=""
-      style={{ backgroundColor: bgColor ? "lightgreen" : "green" }}
+      style={{ backgroundColor: props.id  % 2 == 0  ? "lightgreen" : "white" }}
     >
       <td>{props.id + 1}</td>
       <td>{props.calories}</td>
