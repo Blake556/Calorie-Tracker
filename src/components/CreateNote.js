@@ -40,7 +40,7 @@ function CreatNote(props) {
           >
             How many calories did you have today?
           </label>
-          <div className="col-lg-4">
+          <div className="col-lg-4 ">
             <input
               onChange={handleNewLog}
               type="number"

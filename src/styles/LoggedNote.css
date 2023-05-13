@@ -2,7 +2,7 @@
    
     border: 2px solid black;
     margin-top: 20px;
-    min-height: 300px;
+    /* min-height: 300px; */
     max-height: auto;
     text-align: center;
     font-size: 1.2rem;

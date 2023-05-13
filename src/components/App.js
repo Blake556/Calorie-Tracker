@@ -25,18 +25,18 @@ function App() {
 
       <div className="container app-body">
         <div className="row">
-          <div className="col col-8">
+          <div className="col col-xl-8 col-lg-8 col-md-12 col-md-12 col-12">
             <CreateNote addLog={addLog}/>
           </div>
-          <div className="col col-4">
+          <div className="col col-xl-4 col-lg-4 col-md-12 col-md-12 col-12">
             <LoggedAvg savedLog={saveLog} addLog={addLog} />
           </div>
         </div>
 
         <div className="row">
-          <div className="col">
+          <div className="col-12">
             <LoggedNotes 
-              savedLog={saveLog}
+              savedLog={saveLog} 
             />
           </div>
         </div>

@@ -40,3 +40,18 @@ input.text-input {
     position: relative;
     right: 30px;
 }
+
+@media screen and (max-width: 992px) {
+    .name-of-input {
+        font-size: 1.2rem;
+        padding-left: 50px;
+    }
+
+    input.text-input {
+        text-align: center;
+        font-size: 1.2rem;
+        position: relative;
+        right: 30px;
+    }
+
+  }
