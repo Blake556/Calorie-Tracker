@@ -14,7 +14,7 @@ function LoggedAvg(props) {
   let roundProtien;
   let roundCarbs;
 
-  if (currentLog.length >= 3) {
+  if (currentLog.length >= 7) {
     
      // Calculate calories
       let getCalories = currentLog.map(logs  => {

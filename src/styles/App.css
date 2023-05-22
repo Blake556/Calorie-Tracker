@@ -3,6 +3,11 @@
   margin: 0 auto ;
 }
 
+.components-containers {
+  margin: 20px 0;
+ 
+}
+
 .app-body {
    
     min-height: 100vh;

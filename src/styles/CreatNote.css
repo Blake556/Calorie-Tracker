@@ -4,7 +4,23 @@
    
     border: 2px solid black;
     height: 375px;
+    padding-top: 0;
     margin: 0 auto
+}
+
+.form-container {
+  
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.input-nutrition {
+    background-color: orange;
+    /* font-weight: bold; */
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+
 }
 
 label {
@@ -39,6 +55,7 @@ input.text-input {
     border-radius: 50%;
     position: relative;
     right: 30px;
+    background-color: orange;
 }
 
 @media screen and (max-width: 992px) {

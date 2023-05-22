@@ -20,10 +20,10 @@ const LogList = props.savedLog
   return (
     <div className=" Logged-Notes-container">
       
-      { LogList.length === 0  ?  <div>No Note Logged</div> :
+      { LogList.length === 0  ?  <div>No Notes Logged</div> :
       <table className="">
       <tbody>
-        <tr>
+        <tr className="table-headers">
           <th>Logged</th>
           <th>Calories</th>
           <th>Protien</th>

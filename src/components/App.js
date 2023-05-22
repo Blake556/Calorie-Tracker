@@ -25,10 +25,10 @@ function App() {
 
       <div className="container app-body">
         <div className="row">
-          <div className="col col-xl-8 col-lg-8 col-md-12 col-md-12 col-12">
+          <div className="components-containers col col-xl-8 col-lg-8 col-md-12 col-md-12 col-12">
             <CreateNote addLog={addLog}/>
           </div>
-          <div className="col col-xl-4 col-lg-4 col-md-12 col-md-12 col-12">
+          <div className="components-containers col col-xl-4 col-lg-4 col-md-12 col-md-12 col-12">
             <LoggedAvg savedLog={saveLog} addLog={addLog} />
           </div>
         </div>

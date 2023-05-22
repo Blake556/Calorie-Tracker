@@ -31,8 +31,11 @@ function CreatNote(props) {
 
 
   return (
-    <div className=" create-note-container d-flex justify-content-center align-items-center">
-      <form className="">
+    <div className="create-note-container  ">
+      <h3 className="input-nutrition">Input nutriton data</h3>
+    <div className=" d-flex justify-content-center align-items-center">
+      <form className="form-container">
+    
         <div className="row mb-3 ">
           <label
             htmlFor="colFormLabelSm"
@@ -88,9 +91,10 @@ function CreatNote(props) {
           </div>
         </div>
         <div className='d-flex justify-content-end'>
-        <button className='btn btn-warning' onClick={submitNote}><AddIcon/></button>
+        <button className='btn ' onClick={submitNote}><AddIcon/></button>
         </div>
       </form>
+    </div>
     </div>
   );
 }
