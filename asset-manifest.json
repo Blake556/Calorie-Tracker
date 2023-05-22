@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Blake556/Calorie-Tracker/static/css/main.ced44b31.css",
+    "main.js": "/Blake556/Calorie-Tracker/static/js/main.633f179e.js",
+    "index.html": "/Blake556/Calorie-Tracker/index.html",
+    "main.ced44b31.css.map": "/Blake556/Calorie-Tracker/static/css/main.ced44b31.css.map",
+    "main.633f179e.js.map": "/Blake556/Calorie-Tracker/static/js/main.633f179e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ced44b31.css",
+    "static/js/main.633f179e.js"
+  ]
+}
