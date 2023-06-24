@@ -19,13 +19,13 @@ function Header() {
   return (
     <div className="container ">
       <div className="row d-flex justify-content-center">
-        <div className="col-12 header-container ">
+        <div className="col-9 header-container ">
           <div className="header text-success  ">
-            <h1 className="display-3 ">Calorie Tracker</h1>
+            <h1 className="display-4 ">Calorie Tracker</h1>
           </div>
           
           <div className=" current-date">
-            <h4 className="display-6 font-weight-bold">{date}</h4>
+            <h4 className=" display-6 date-header">{date}</h4>
           </div>
         </div>
       </div>

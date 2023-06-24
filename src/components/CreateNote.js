@@ -32,11 +32,11 @@ function CreatNote(props) {
 
   return (
     <div className="create-note-container  ">
-      <h3 className="input-nutrition">Input nutriton data</h3>
+      <h4 className="input-nutrition">Input nutriton data</h4>
     <div className=" d-flex justify-content-center align-items-center">
       <form className="form-container">
     
-        <div className="row mb-3 ">
+        <div className="row input-row mb-3 ">
           <label
             htmlFor="colFormLabelSm"
             className="col-lg-8 col-form-label col-form-label-lg name-of-input"
@@ -54,7 +54,7 @@ function CreatNote(props) {
             ></input>
           </div>
         </div>
-        <div className="row mb-3">
+        <div className="row input-row mb-3">
           <label
             htmlFor="colFormLabel"
             className="col-lg-8 col-form-label-lg protien-input name-of-input"
@@ -72,7 +72,7 @@ function CreatNote(props) {
             ></input>
           </div>
         </div>
-        <div className="row mb-3">
+        <div className="row input-row mb-3">
           <label
             htmlFor="colFormLabelLg"
             className="col-lg-8 col-form-label col-form-label-lg name-of-input"

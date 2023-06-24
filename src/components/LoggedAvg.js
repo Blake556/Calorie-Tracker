@@ -55,14 +55,14 @@ function LoggedAvg(props) {
 
   return (
     <div className="Logged-Avg-container">
-      <h3 className="average-title">Average</h3>
-      <h4>Calories</h4>
+      <h4 className="average-title">Average</h4>
+      <h5 className="category">Calories</h5>
       <p className="cal-amount">{roundCalories || '?'}</p>
-      <h5>Protien</h5>
-      <p>{roundProtien || '?'}</p>
-      <h5>Carbs</h5>
-      <p>{roundCarbs || '?'}</p>
-      <p>Log atleast 3 notes to see average</p>
+      <h5 className="category">Protien</h5>
+      <p className="cal-amount">{roundProtien || '?'}</p>
+      <h5 className="category">Carbs</h5>
+      <p className="cal-amount">{roundCarbs || '?'}</p>
+      <p className="default-msg">Log atleast 7 notes to see average</p>
      
     </div>
   );
