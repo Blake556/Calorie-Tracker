@@ -1,0 +1,24 @@
+
+.header-container {
+  margin: 0 auto;
+}
+
+h1, .header {
+    text-align: left;
+    padding-bottom: 10px;
+    /* font-size: 4rem; */
+  }
+  
+  .current-date {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 20px;
+    
+    border-top : .5px solid rgb(104, 104, 104);
+    border-bottom : .5px solid  rgb(104, 104, 104);
+  }
+  
+.date-header {
+    padding: 10px 0;
+   
+  }

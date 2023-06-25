@@ -1,0 +1,19 @@
+
+.Footer {
+ 
+
+
+    background-color: black;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center; 
+}
+
+h6 {
+    color: azure;
+    display: flex;
+    align-items: center;
+}

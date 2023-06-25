@@ -1,0 +1,19 @@
+.Logged-Notes-container {
+   
+    border: 1.5px solid black;
+    margin-top: 20px;
+    /* min-height: 300px; */
+    max-height: auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.table-headers{
+    background-color: orange;
+}

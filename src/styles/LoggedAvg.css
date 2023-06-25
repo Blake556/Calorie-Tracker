@@ -1,0 +1,32 @@
+.Logged-Avg-container {
+    border: 1.5px solid black;
+    height: 325px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+
+
+.average-title {
+    background-color: orange;
+   margin-bottom: 15px;
+}
+
+.category {
+  
+  
+   
+}
+
+.cal-amount {
+    color: orange;
+    font-size: 1rem;
+  
+}
+
+.default-msg {
+  margin-top: 30px;
+    
+}

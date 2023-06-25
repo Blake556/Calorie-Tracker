@@ -1,0 +1,16 @@
+.App {
+  padding-top: 20px;
+  margin: 0 auto ;
+}
+
+.components-containers {
+  margin: 20px 0;
+ 
+}
+
+.app-body {
+   width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
