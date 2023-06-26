@@ -1,6 +1,6 @@
 .Logged-Avg-container {
     border: 1.5px solid black;
-    height: 325px;
+    height: 330px;
     text-align: center;
     font-weight: bold;
     font-size: 1rem;
@@ -29,4 +29,58 @@
 .default-msg {
   margin-top: 30px;
     
+}
+
+@media screen and (max-width: 992px) {
+    .Logged-Avg-container {
+        border: 1.5px solid black;
+        height: 375px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        
+    }
+
+    .default-msg {
+      
+        width: 90%;
+        margin: 74px auto;
+      }
+}
+
+
+@media screen and (max-width: 767px) {
+    .Logged-Avg-container {
+        border: 1.5px solid black;
+        height: 300px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        
+    }
+
+    .default-msg {
+      
+        width: 90%;
+        margin: 20px auto;
+      }
+}
+
+@media screen and (max-width: 400px) {
+    .Logged-Avg-container {
+        border: 1.5px solid black;
+        height: 300px;
+        width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        
+    }
+
+    .default-msg {
+      
+        width: 90%;
+        margin: 10px auto;
+      }
 }

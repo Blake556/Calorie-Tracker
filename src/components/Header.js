@@ -17,9 +17,9 @@ function Header() {
   //console.log(date)
 
   return (
-    <div className="container ">
+    <div className="container head">
       <div className="row d-flex justify-content-center">
-        <div className="col-9 header-container ">
+        <div className="col-xl-10 col-lg-12 col-md-12 header-container ">
           <div className="header text-success  ">
             <h1 className="display-4 ">Calorie Tracker</h1>
           </div>

@@ -3,14 +3,14 @@
    
    
     border: 1.5px solid black;
-    height: 325px;
+    height: 330px;
     padding-top: 0;
     margin: 0 auto
 }
 
 .form-container {
   
-    margin-top: 10px;
+    margin-top: 15px;
     padding-top: 0;
 }
 
@@ -60,22 +60,146 @@ input.text-input {
    
     width: 75px;
     position: relative;
-    top: 5px;
+    
     right: 42px;
     background-color: orange;
 }
 
+
 @media screen and (max-width: 992px) {
-    .name-of-input {
+
+ 
+    .create-note-container {
+        border: 1.5px solid black;
+        height: 375px;
+        padding-top: 0;
+        margin: 0 auto
+    }
+
+    .form-container {
+        margin-top: 10px;
+    }
+
+    label.name-of-input {
+        width: 300px;
+        padding-left: 20px;
         font-size: 1.2rem;
-        padding-left: 50px;
+    }
+
+    .input-con {
+        width: 125px;
+        display: flex;
+        align-items: center;
     }
 
     input.text-input {
         text-align: center;
         font-size: 1.2rem;
         position: relative;
-        right: 30px;
+        left: 0px;
     }
 
-  }
+    .btn {
+        width: 75px;
+        position: relative;
+        right: 13px;
+        background-color: orange;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .create-note-container {
+        border: 1.5px solid black;
+        height: 375px;
+        padding-top: 0;
+        margin: 0 auto
+    }
+    label.name-of-input {
+        width: 300px;
+        padding-left: 20px;
+        font-size: 1.2rem;
+       
+    }
+
+    .input-con {
+        width: 125px;
+       display: flex;
+       align-items: center;
+    }
+
+    input.text-input {
+        text-align: center;
+        font-size: 1.2rem;
+        position: relative;
+        left: 0px;
+    }
+
+    .btn {
+   
+        width: 75px;
+        position: relative;
+        
+        right: 13px;
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .create-note-container {
+        border: 1.5px solid black;
+        height: 325px;
+        width: 350px;
+        padding-top: 0;
+        margin: 0 auto
+    }
+
+    .form-container {
+        margin-top: 10px;
+    }
+
+    label.name-of-input {
+        width: 225px;
+        padding-left: 5px;
+        font-size: 1rem;
+    }
+
+    .input-con {
+        width: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    input.text-input {
+        text-align: center;
+        font-size: 1rem;
+        position: relative;
+        left: 0px;
+    }
+
+    .btn-icon {
+        font-size: .5rem;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .btn {
+        width: 75px;
+        height: 30px;
+        position: relative;
+        right: 13px;
+        bottom: 10px;
+        background-color: orange;
+    }
+
+}
+
+
+
+
+   
+
+
+
+
+   
