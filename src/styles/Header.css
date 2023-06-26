@@ -22,3 +22,16 @@ h1, .header {
     padding: 10px 0;
    
   }
+
+
+  @media screen and (min-width: 401px) and (max-width: 580px) {
+    .head {
+     min-width: 580px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .head {
+      max-width: 370px;
+    }
+}

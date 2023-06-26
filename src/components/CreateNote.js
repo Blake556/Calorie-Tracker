@@ -43,7 +43,7 @@ function CreatNote(props) {
           >
             How many calories did you have today?
           </label>
-          <div className="col-lg-4 ">
+          <div className="col-lg-4 input-con">
             <input
               onChange={handleNewLog}
               type="number"
@@ -61,7 +61,7 @@ function CreatNote(props) {
           >
             How many grams of protien did you have today?
           </label>
-          <div className="col-lg-4">
+          <div className="col-lg-4 input-con">
             <input
               onChange={handleNewLog}
               type="number"
@@ -79,7 +79,7 @@ function CreatNote(props) {
           >
             How many carbs did you have today?
           </label>
-          <div className="col-lg-4">
+          <div className="col-lg-4 input-con">
             <input
               onChange={handleNewLog}
               type="number"
@@ -91,7 +91,7 @@ function CreatNote(props) {
           </div>
         </div>
         <div className='d-flex justify-content-end'>
-        <button className='btn ' onClick={submitNote}><AddIcon/></button>
+        <button className='btn ' onClick={submitNote}><AddIcon className="btn-icon"/></button>
         </div>
       </form>
     </div>
