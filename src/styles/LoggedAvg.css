@@ -14,12 +14,6 @@
    margin-bottom: 15px;
 }
 
-.category {
-  
-  
-   
-}
-
 .cal-amount {
     color: orange;
     font-size: 1rem;
@@ -27,7 +21,8 @@
 }
 
 .default-msg {
-  margin-top: 30px;
+    width: 90%;
+    margin: 30px auto 0;
     
 }
 

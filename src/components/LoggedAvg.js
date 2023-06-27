@@ -14,7 +14,7 @@ function LoggedAvg(props) {
   let roundProtien;
   let roundCarbs;
 
-  if (currentLog.length >= 7) {
+  if (currentLog.length >= 3) {
     
      // Calculate calories
       let getCalories = currentLog.map(logs  => {
@@ -24,9 +24,8 @@ function LoggedAvg(props) {
       let addCalories = calString2Num.reduce((accumulator, currentValue) => {
         return accumulator + currentValue
       })
-      let avgCalories = addCalories / 7
+      let avgCalories = addCalories / getCalories.length
       roundCalories = Math.floor(avgCalories) 
-      console.log(roundCalories)
 
       // Calculate protien
       let getProtien = currentLog.map(logs  => {
@@ -36,7 +35,7 @@ function LoggedAvg(props) {
       let addProtien = protString2Num.reduce((accumulator, currentValue) => {
         return accumulator + currentValue
       })
-      let avgProtien = addProtien / 7
+      let avgProtien = addProtien / getProtien.length
       roundProtien = Math.floor(avgProtien) 
       console.log(roundProtien)
 
@@ -48,7 +47,7 @@ function LoggedAvg(props) {
       let addCarbs = carbString2Num.reduce((accumulator, currentValue) => {
         return accumulator + currentValue
       })
-      let avgCarbs = addCarbs / 7
+      let avgCarbs = addCarbs / getCarbs.length
       roundCarbs = Math.floor( avgCarbs) 
       console.log(roundCarbs)
     } 
@@ -62,7 +61,7 @@ function LoggedAvg(props) {
       <p className="cal-amount">{roundProtien || '?'}</p>
       <h5 className="category">Carbs</h5>
       <p className="cal-amount">{roundCarbs || '?'}</p>
-      <p className="default-msg">Log atleast 7 notes to see average</p>
+      <p className="default-msg">{currentLog.length >= 3 ? 'Your 3 day average' : 'Log atleast 3 notes to see your average'}</p>
      
     </div>
   );
