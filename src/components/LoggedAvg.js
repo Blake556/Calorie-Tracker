@@ -11,7 +11,7 @@ function LoggedAvg(props) {
  }
 
   let roundCalories;
-  let roundProtien;
+  let roundProtein;
   let roundCarbs;
 
   if (currentLog.length >= 3) {
@@ -28,16 +28,16 @@ function LoggedAvg(props) {
       roundCalories = Math.floor(avgCalories) 
 
       // Calculate protien
-      let getProtien = currentLog.map(logs  => {
-        return logs.protien
+      let getProtein = currentLog.map(logs  => {
+        return logs.protein
       })
-      var protString2Num = getProtien.map(toNumber);
-      let addProtien = protString2Num.reduce((accumulator, currentValue) => {
+      var protString2Num = getProtein.map(toNumber);
+      let addProtein = protString2Num.reduce((accumulator, currentValue) => {
         return accumulator + currentValue
       })
-      let avgProtien = addProtien / getProtien.length
-      roundProtien = Math.floor(avgProtien) 
-      console.log(roundProtien)
+      let avgProtein = addProtein / getProtein.length
+      roundProtein = Math.floor(avgProtein) 
+      console.log(roundProtein)
 
       // Calculate carbs
       let getCarbs = currentLog.map(logs  => {
@@ -57,11 +57,11 @@ function LoggedAvg(props) {
       <h4 className="average-title">Average</h4>
       <h5 className="category">Calories</h5>
       <p className="cal-amount">{roundCalories || '?'}</p>
-      <h5 className="category">Protien</h5>
-      <p className="cal-amount">{roundProtien || '?'}</p>
+      <h5 className="category">Protein</h5>
+      <p className="cal-amount">{roundProtein || '?'}</p>
       <h5 className="category">Carbs</h5>
       <p className="cal-amount">{roundCarbs || '?'}</p>
-      <p className="default-msg">{currentLog.length >= 3 ? 'Your 3 day average' : 'Log atleast 3 notes to see your average'}</p>
+      <p className="default-msg">{currentLog.length >= 3 ? 'Your 3 day average' : 'Log at least 3 notes to see your average'}</p>
      
     </div>
   );

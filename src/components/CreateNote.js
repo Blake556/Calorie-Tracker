@@ -8,7 +8,7 @@ function CreatNote(props) {
   const [logNote, setLogNote] = useState({
 
     calories: '', 
-    protien: '',
+    protein: '',
     carbs: ''
   })
 
@@ -32,7 +32,7 @@ function CreatNote(props) {
 
   return (
     <div className="create-note-container  ">
-      <h4 className="input-nutrition">Input nutriton data</h4>
+      <h4 className="input-nutrition">Input Nutrition Data</h4>
     <div className=" d-flex justify-content-center align-items-center">
       <form className="form-container">
     
@@ -59,14 +59,14 @@ function CreatNote(props) {
             htmlFor="colFormLabel"
             className="col-lg-8 col-form-label-lg protien-input name-of-input"
           >
-            How many grams of protien did you have today?
+            How many grams of protein did you have today?
           </label>
           <div className="col-lg-4 input-con">
             <input
               onChange={handleNewLog}
               type="number"
               className="form-control  form-control-lg text-input"
-              name="protien"
+              name="protein"
               value={logNote.protien}
               required
             ></input>

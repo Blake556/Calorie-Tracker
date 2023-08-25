@@ -26,7 +26,7 @@ const LogList = props.savedLog
         <tr className="table-headers">
           <th>Logged</th>
           <th>Calories</th>
-          <th>Protien</th>
+          <th>Protein</th>
           <th>Carbs</th>
           <th>Date</th>
         </tr>
@@ -36,7 +36,7 @@ const LogList = props.savedLog
                       key={index}
                       id={index}
                       calories={newLog.calories}
-                      protien={newLog.protien}
+                      protein={newLog.protein}
                       carbs={newLog.carbs}
                       day={date}
                     />

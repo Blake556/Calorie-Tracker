@@ -19,7 +19,7 @@ function Note(props) {
     >
       <td>{props.id + 1}</td>
       <td>{props.calories}</td>
-      <td>{props.protien}</td>
+      <td>{props.protein}</td>
       <td>{props.carbs}</td>
       <td>{props.day}</td>
     </tr>
